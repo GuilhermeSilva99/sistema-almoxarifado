@@ -17,4 +17,8 @@ class Pedido extends Model
     public function tipoEquipamento(){
     	return $this->belongsTo('app\TipoEquipamento');
     }
+
+    public function patrimonio(){
+    	return $this->hasMany('app\Patrimonio');
+    }
 }
