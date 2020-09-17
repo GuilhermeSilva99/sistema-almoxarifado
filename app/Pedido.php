@@ -9,4 +9,8 @@ class Pedido extends Model
     public function funcionario(){
     	return $this->belongsTo('app\Funcionario');
     }
+
+    public function servidor(){
+    	return $this->belongsTo('app\Servidor');
+    }
 }
