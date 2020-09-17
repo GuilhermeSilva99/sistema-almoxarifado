@@ -18,6 +18,10 @@ class Pedido extends Model
     	return $this->belongsTo('app\TipoEquipamento');
     }
 
+    public function pedidoAnterior(){
+    	return $this->hasOne('app\Pedido');
+    }
+
     public function patrimonio(){
     	return $this->hasMany('app\Patrimonio');
     }
