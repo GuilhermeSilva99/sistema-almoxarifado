@@ -19,7 +19,7 @@ class Pedido extends Model
     }
 
     public function pedidoAnterior(){
-    	return $this->hasOne('app\Pedido');
+    	return $this->belongsTo('app\Pedido');
     }
 
     public function patrimonio(){
